@@ -1,2 +1,19 @@
 
 target/classes/com/example/scharge/config/RestTemplateConfig.class
+*.log
+*.xml
+*.md
+target/classes/com/example/scharge/controller/QuotesController.class
+target/classes/com/example/scharge/dto/QuoteDto.class
+target/classes/com/example/scharge/dto/QuoteResponse.class
+target/classes/com/example/scharge/dto/RateDto.class
+target/classes/com/example/scharge/entity/Quote.class
+target/classes/com/example/scharge/entity/Rates.class
+target/classes/com/example/scharge/entity/User.class
+target/classes/com/example/scharge/exceptionhandler/GlobalExceptionHandler.class
+target/classes/com/example/scharge/QuotesApplication.class
+target/classes/com/example/scharge/repository/QuoteRepository.class
+target/classes/com/example/scharge/repository/RateRepository.class
+target/classes/com/example/scharge/repository/UserRepository.class
+target/classes/com/example/scharge/service/LoadQuotesService.class
+target/classes/com/example/scharge/service/QuoteService.class
