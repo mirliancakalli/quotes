@@ -16,4 +16,8 @@ public interface QuoteRepository extends JpaRepository<Quote,Long> {
 
     @Query(value = "SELECT COUNT(*) FROM quotes", nativeQuery = true)
     Long countQuotes();
+
+    @Query(value = "SELECT * FROM quotes WHERE author = :author AND id != :currentQuoteId ORDER BY rating DESC", nativeQuery = true)
+    List<Quote> findComparableQuotesByAuthorAndIdNot(String author, Long currentQuoteId);
+
 }

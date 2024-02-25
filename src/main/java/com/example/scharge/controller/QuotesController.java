@@ -43,4 +43,10 @@ public class QuotesController {
     public List<Quote> topRated() {
         return quoteService.topRated();
     }
+
+    @GetMapping("/comparable-quote")
+    public List<Quote> comparableQuote(@RequestParam String author , @RequestParam Long currentQuoteId) {
+        return quoteService.comparableQuote(author, currentQuoteId);
+    }
+
 }

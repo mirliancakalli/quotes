@@ -61,4 +61,8 @@ public class QuoteService {
     public List<Quote> topRated() {
         return quoteRepository.findAllByOrderByRatingDesc();
     }
+
+    public List<Quote> comparableQuote(String author, Long currentQuoteId) {
+        return quoteRepository.findComparableQuotesByAuthorAndIdNot(author, currentQuoteId);
+    }
 }
